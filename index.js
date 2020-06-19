@@ -20,7 +20,7 @@ try {
   const axios = require('axios').default;
 
   const username = 'AlexMihov'
-  const password = 'eaf6cfb963d8f88b162d76602e6922096d60f8ef'
+  const password = 'd2f12e04c4b8deeb65af6aed85849b7da4bf7284'
 
   const token = Buffer.from(`${username}:${password}`, 'utf8').toString('base64')
 
