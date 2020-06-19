@@ -24,7 +24,7 @@ try {
 
   const token = Buffer.from(`${username}:${password}`, 'utf8').toString('base64')
 
-  const url = context.event.pull_requests.commits.href
+  const url = github.context.event.pull_requests.commits.href
   // const url = "https://api.github.com/repos/AlexMihov/timer-app-backend/pulls/65/commits"
   axios.get(url, {
     headers: {
