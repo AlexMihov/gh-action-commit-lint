@@ -1,3 +1,6 @@
+const core = require('@actions/core');
+const github = require('@actions/github');
+
 try {
 
 // try {
@@ -12,9 +15,6 @@ try {
 // } catch (error) {
 //   core.setFailed(error.message);
 // }
-
-  const core = require('@actions/core');
-  const github = require('@actions/github');
 
   // const context = JSON.parse(process.env.GITHUB_CONTEXT)
   const axios = require('axios').default;
