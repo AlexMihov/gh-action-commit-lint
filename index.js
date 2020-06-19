@@ -20,7 +20,7 @@ try {
   const axios = require('axios').default;
 
   const username = 'AlexMihov'
-  const password = '7e70d3538bd5c491dfd9dac96a7f7b4456fff717'
+  const password = '5da644153842fe2449eb5ad4b8d437eb542f8f33'
 
   const token = Buffer.from(`${username}:${password}`, 'utf8').toString('base64')
 
@@ -45,6 +45,8 @@ try {
         messages_ok = false;
       }
     })
+  }).catch(e => {
+    core.setFailed(e.message);
   })
 
 } catch (error) {
